@@ -1,4 +1,5 @@
 let a = "";
+
 function update(e)
 {
     a+=e;
@@ -7,10 +8,14 @@ function update(e)
 
 function hasil()
 {
-  document.getElementById("display").innerHTML = eval(a);
+    let n = eval(a);
+    let p = n.toFixed(2);
+    document.getElementById("display").innerHTML = p;
 }
 
 function hapus() {
   a = "0"
   document.getElementById('display').innerHTML = a;
 }
+
+
