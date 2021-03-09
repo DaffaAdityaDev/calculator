@@ -1,5 +1,4 @@
 let a = "";
-
 function update(e)
 {
     a+=e;
@@ -15,5 +14,3 @@ function hapus() {
   a = "0"
   document.getElementById('display').innerHTML = a;
 }
-
-
