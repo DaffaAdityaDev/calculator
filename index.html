@@ -1,13 +1,42 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-      
-    <script src="script.js"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+   <main>
+      <div class="calculator">
+          <div class="screen">
+              <div class="screen padding" id="display">
+                0
+              </div>
+          </div>
+          <div class="keys">
+              <div id="clear" class="keypad" onClick='hapus()'>AC</div>
+              <div id="divide" class="keypad" onClick='update("/")'>/</div>
+              <div id="multiply" class="keypad" onClick='update("*")'>X</div> 
+              <div id="add" class="keypad" onClick='update("+")'>+</div>
+              <div id="subtract" class="keypad" onClick='update("-")'>-</div>
+              <div id="decimal" class="keypad" onClick='update(".")'>.</div>
+              <div id="equals" class="keypad" onClick='hasil()'>=</div>
+              <div id="zero" class="keypad" onClick='update("0")'>0</div>
+              <div id="one" class="keypad" onClick='update("1")'>1</div>
+              <div id="two" class="keypad" onClick='update("2")'>2</div>
+              <div id="three" class="keypad" onClick='update("3")'>3</div>
+              <div id="four" class="keypad" onClick='update("4")'>4</div>
+              <div id="five" class="keypad" onClick='update("5")'>5</div>
+              <div id="six" class="keypad" onClick='update("6")'>6</div>
+              <div id="seven" class="keypad" onClick='update("7")'>7</div>
+              <div id="eight" class="keypad" onClick='update("8")'>8</div>
+              <div id="nine" class="keypad" onClick='update("9")'>9</div>
+          </div>
+      </div>
+  </main>
+<script src="script.js"></script>
+</body>
 </html>
