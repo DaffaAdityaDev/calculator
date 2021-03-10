@@ -14,7 +14,7 @@ function hasil()
 }
 
 function hapus() {
-  a = "0"
+  a = ""
   document.getElementById('display').innerHTML = a;
 }
 
